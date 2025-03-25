@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import UseEffect from './UseEffect'
 import UseReducer from './UseReducer'
+import UseMemo from './UseMemo'
 
 function App() {
   const [show, setShow] = useState(false)
@@ -22,7 +23,10 @@ function App() {
       </>
     }
 
+    <hr />
     <UseReducer/>
+    <hr />
+    <UseMemo/>
 
     </>
   )
