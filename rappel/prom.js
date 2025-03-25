@@ -48,19 +48,30 @@ const getTodo = (id)=>{
 
 // Promise.all([pTodo1,pTodo2,pTodo3,pTodo4]).then((arr)=>console.log(arr))
 
-const main = async ()=>{
-const todo1 = await getTodo(1)
-console.log(todo1)
-const todo2 = await getTodo(todo1.id+1)
-console.log(todo2)
-const todo3 = await getTodo(todo2.id+1)
-console.log(todo3)
-const todo4 = await getTodo(todo3.id+1)
-console.log(todo4)
+// const main = async ()=>{
+// const todo1 = await getTodo(1)
+// console.log(todo1)
+// const todo2 = await getTodo(todo1.id+1)
+// console.log(todo2)
+// const todo3 = await getTodo(todo2.id+1)
+// console.log(todo3)
+// const todo4 = await getTodo(todo3.id+1)
+// console.log(todo4)
 
+// }
+
+
+// main()
+
+
+
+
+const f = ()=>{
+    return Promise.resolve(2)
 }
 
 
-main()
 
-
+const r = f()
+// r.then(data => console.log(data))
+r.then(console.log)
